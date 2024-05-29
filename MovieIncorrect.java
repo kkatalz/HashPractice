@@ -14,11 +14,14 @@ public class MovieIncorrect {
             return false;
         }
 
-        if (!(obj instanceof Movie)) {
+        if (!(obj instanceof MovieIncorrect)) {
+            System.out.println("obj is not instance of Movie");
             return true;
         }
 
-        Movie movie = (Movie) obj;
+        MovieIncorrect movie = (MovieIncorrect) obj;
+        System.out.println("movie: " + movie + " this: " + this);
+
         return !(movie.title.equals(title) && movie.year.equals(year));
     }
 

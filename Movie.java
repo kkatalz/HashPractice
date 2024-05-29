@@ -15,10 +15,12 @@ public class Movie {
         }
 
         if (!(obj instanceof Movie)) {
+            System.out.println("obj is not instance of Movie");
             return false;
         }
 
         Movie movie = (Movie) obj;
+        System.out.println("movie: " + movie + " this: " + this);
         return movie.title.equals(title) && movie.year.equals(year);
     }
 
