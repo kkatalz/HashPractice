@@ -5,6 +5,8 @@ public class MessageDigestUsage {
     public static void main(String[] args) {
 
         String input = "I am Carlo!";
+        System.out.println(" Task 1 with MessageDigest");
+
         System.out.println("MD5: " + generateHash(input, "MD5"));
         System.out.println("SHA-1: " + generateHash(input, "SHA-1"));
         System.out.println("SHA-256: " + generateHash(input, "SHA-256"));
