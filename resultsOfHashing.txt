@@ -1,0 +1,42 @@
+task 1 (MessageDigest)
+MD5: 7cc600563b4c14d5c1539b09c813d229
+SHA-1: c603899713e75cc1b4ccf4e2ef18420602d09842
+SHA-256: 9dbbffa83a8685087810ec22282d2bfc64b90055c7a38b9fdda256e2956d2f0f
+
+Task 2 with SecureRandom
+SHA1PRNG: 4920616d20426f6221
+DRBG: 4920616d20426f6221
+Windows-PRNG: 4920616d20426f6221
+
+Task 3 with equals and hashCode methods
+Movie with correct equals and hashCode methods
+movie: Batman, 1989 this: The Godfather, 1972
+Check if The Godfather, 1972 is equal to Batman, 1989. Equal? - false
+movie: Batman, 1989 this: Batman, 1989
+Check if Batman, 1989 is equal to Batman, 1989. Equal? - true
+
+The Godfather, 1972 -> 834267997
+Batman, 1989 -> 1982671114
+Batman, 1989 -> 1982671114
+
+MovieIncorrect with incorrect equals and hashCode methods
+movie: Batman, 1989 this: The Godfather, 1972
+Check if The Godfather, 1972 is equal to Batman, 1989. Equal? - true
+movie: Batman, 1989 this: Batman, 1989
+Check if Batman, 1989 is equal to Batman, 1989. Equal? - false
+
+The Godfather, 1972 -> 1111111
+Batman, 1989 -> 1111111
+Batman, 1989 -> 1111111
+
+ Usage of HashMap
+
+Movie with correct equals and hashCode methods
+movie: Batman, 1989 this: Batman, 1989
+
+MovieIncorrect with incorrect equals and hashCode methods
+movie: The Godfather, 1972 this: Batman, 1989
+movie: The Godfather, 1972 this: Batman, 1989
+
+Movie with correct equals and hashCode methods: 2
+Movie with incorrect equals and hashCode methods: 1
